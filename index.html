@@ -3,24 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chiuso per assenza</title>
+    <title>Materie</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
         }
-        .message {
-            font-size: 2rem;
-            color: #333;
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
         }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .subject {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+            .subject h2 {
+                margin-top: 0;
+            }
+
+            .subject a {
+                color: #007bff;
+                text-decoration: none;
+            }
+
+                .subject a:hover {
+                    text-decoration: underline;
+                }
     </style>
 </head>
 <body>
-    <div class="message">Chiuso per vacanze</div>
+    <header>
+        <h1>Materie</h1>
+    </header>
+    <div class="container">
+        <div class="subject">
+            <h2><a href="tpsit.html">TPSIT</a></h2>
+        </div>
+        <div class="subject">
+            <h2><a href="telecomunicazione.html">Telecomunicazione</a></h2>
+        </div>
+        <div class="subject">
+            <h2><a href="informatica.html">Informatica</a></h2>
+        </div>
+        <div class="subject">
+            <h2><a href="italiano.html">Italiano</a></h2>
+        </div>
+        <div class="subject">
+            <h2><a href="inglese.html">Inglese</a></h2>
+        </div>
+        <div class="subject">
+            <h2><a href="matematica.html">Matematica</a></h2>
+        </div>
+        <div class="subject">
+            <h2><a href="sistemi-e-reti.html">Sistemi e Reti</a></h2>
+        </div>
+        <div class="subject">
+            <h2><a href="storia.html">Storia</a></h2>
+        </div>
+    </div>
 </body>
 </html>
