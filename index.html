@@ -34,25 +34,35 @@
             border-radius: 5px;
         }
 
-            .subject h2 {
-                margin-top: 0;
-            }
+        .subject h2 {
+            margin-top: 0;
+        }
 
-            .subject a {
-                color: #007bff;
-                text-decoration: none;
-            }
+        .subject a {
+            color: #007bff;
+            text-decoration: none;
+        }
 
-                .subject a:hover {
-                    text-decoration: underline;
-                }
+        .subject a:hover {
+            text-decoration: underline;
+        }
     </style>
+    <script>
+        function askPassword() {
+            var password = prompt("Inserisci la password:");
+            if (password === "0706") {
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Password errata. Ricarica la pagina e riprova.");
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload="askPassword()">
     <header>
         <h1>Materie</h1>
     </header>
-    <div class="container">
+    <div id="content" class="container" style="display: none;">
         <div class="subject">
             <h2><a href="tpsit.html">TPSIT</a></h2>
         </div>
@@ -78,5 +88,8 @@
             <h2><a href="storia.html">Storia</a></h2>
         </div>
     </div>
+</body>
+</html>
+
 </body>
 </html>
